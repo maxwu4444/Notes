@@ -14,7 +14,7 @@ print(folder_name)
 ```
 
 **os.path.join**
-用于将多个路径组件合并成一个路径。
+用于将多个路径组件合并成一个路径
 ```
 import os
 
