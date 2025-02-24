@@ -1,10 +1,13 @@
 ![alt text](image.png)
+
+
 **article DOI**: https://doi.org/10.48550/arXiv.1706.03762
 **b站视频**：
 1. https://www.bilibili.com/video/BV14m421u7EM/?spm_id_from=333.337.search-card.all.click&vd_source=2c7c1ee8c8d56510f81bb51b53243439
 
-### <font size='6'>模型解析</font>
 
+
+### <font size='6'>模型解析</font>
 
 **<font color ='c21f30'>1. 两个输入：待处理数据 & 已经标注好的正确output; 一个输出：模型处理得到的结果**
 
@@ -15,6 +18,8 @@
 **2. 取值范围有限：不会由于文本长度过长而影响其他参数的权重**
 
 ![alt text](image-4.png)
+
+
 **在Transformer模型中，模型并没有显式地“提取”每个单词在源句中的位置，而是隐性的大概的地识别和利用了每个单词的位置信息**
 
 
