@@ -30,8 +30,7 @@
 
 
 ### <font size='6'> <font color=green> 经典LLM训练流程 </font>
- <font size='3'>**模型训练分为四个阶段:预训练(Pretraining)、监督微调(Supervised Finetuning)、对齐（Alignment）。**
-**1. 自监督预训练(Pretraining):让大模型从大规模数据中学习，不依赖人工标注完成训练，因为训练/学习的标签(Label Data)是文本的后续单词，已经暗含在训练数据集中。<br>2. 第二阶段监督微调（SFT）仍然是[next token prediction」任务，区别在于预训练数据集，需要输入是一个人工标注的指令，其中包括期望大模型的回复内容。数据形式类似于：
+ <font size='3'>**模型训练分为四个阶段:预训练(Pretraining)、监督微调(Supervised Finetuning)、对齐（Alignment）。**<br>**1. 自监督预训练(Pretraining):让大模型从大规模数据中学习，不依赖人工标注完成训练，因为训练/学习的标签(Label Data)是文本的后续单词，已经暗含在训练数据集中。<br>2. 第二阶段监督微调（SFT）仍然是[next token prediction」任务，区别在于预训练数据集，需要输入是一个人工标注的指令，其中包括期望大模型的回复内容。数据形式类似于：
 ![alt text](image-8.png)
     模型会将instruction作为Input，并逐个预测下一个token，向人工标注的output为目标调整。<br>3. 第三阶段（Alignment）主要目标在于将大模型与人类的偏好、价值观进行对齐，Reinforcement learning with human feedback（RLHF）。常用训练方法有PPO（强化学习）、DPO。。。。**<br>
 
