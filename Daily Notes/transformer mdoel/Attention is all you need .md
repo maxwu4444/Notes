@@ -1,6 +1,6 @@
 ![alt text](image.png)
 
- https://doi.org/10.48550/arXiv.1706.03762
+ https://doi.org/10.48550/arXiv.1706.03762  
 **b站讲解视频**：
 1. https://www.bilibili.com/video/BV14m421u7EM/?spm_id_from=333.337.search-card.all.click&vd_source=2c7c1ee8c8d56510f81bb51b53243439
 2. https://www.bilibili.com/video/BV1Zu4m1u75U?spm_id_from=333.788.player.switch&vd_source=2c7c1ee8c8d56510f81bb51b53243439
