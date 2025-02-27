@@ -5,8 +5,6 @@
 1. https://www.bilibili.com/video/BV14m421u7EM/?spm_id_from=333.337.search-card.all.click&vd_source=2c7c1ee8c8d56510f81bb51b53243439
 2. https://www.bilibili.com/video/BV1Zu4m1u75U?spm_id_from=333.788.player.switch&vd_source=2c7c1ee8c8d56510f81bb51b53243439
 
-
-
 ### <font size='6'> <font color=green> 模型解析 </font>
 **<font size='3'>1. 输入的文字文本叫做 Input<br>2. 文本转换为对应的数字向量叫做 token<br>3. 两个输入：待处理数据 & 已经标注好的正确output; <br>4. 一个输出：模型处理得到的结果**
 
@@ -16,18 +14,13 @@
  1 周期性：能支持任意长度的文本
  2 取值范围有限：不会由于文本长度过长而影响其他参数的权重 </font>**
 **transformer 采用的位置编码信息方式**
-
 ![alt text](image-4.png)
-
-
 **在Transformer模型中，模型并没有显式地“提取”每个单词在源句中的位置，而是隐性的大概的地识别和利用了每个单词的位置信息**
 
 ### <font size='6'> <font color=green> Layer Normalization</font>
 ![alt text](image-6.png) 
 ### <font size='6'> <font color=green> Softmax </font>
 ![alt text](image-7.png)
-
-
 
 ### <font size='6'> <font color=green> 经典LLM训练流程 </font>
  <font size='3'>**模型训练分为四个阶段:预训练(Pretraining)、监督微调(Supervised Finetuning)、对齐（Alignment）。**<br>**1. 自监督预训练(Pretraining):让大模型从大规模数据中学习，不依赖人工标注完成训练，因为训练/学习的标签(Label Data)是文本的后续单词，已经暗含在训练数据集中。<br>2. 第二阶段监督微调（SFT）仍然是[next token prediction」任务，区别在于预训练数据集，需要输入是一个人工标注的指令，其中包括期望大模型的回复内容。数据形式类似于：
